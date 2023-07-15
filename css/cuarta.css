@@ -1,0 +1,53 @@
+.cuarta .contenido-cuarta {
+    max-width: 1100px;
+    margin-bottom: 20px;
+}
+
+.cuarta .col {
+    height: 160px;
+    margin: 2rem auto;
+    position: relative;
+    text-align: center;
+    width: 500px;
+}
+
+.cuarta .col input,
+.cuarta .col textarea {
+    width: 100%;
+    border: none;
+    padding: 15px;
+    margin: 10px;
+    background-color: #0d0f1d;
+    color: #f5c9f2;
+    font-size: 12px;
+}
+
+.cuarta button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #f5c9f2;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #f5c9f2;
+    position: relative;
+    z-index: 10;
+    border-radius: 5%;
+}
+
+.cuarta button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #d65ea0;
+    z-index: -1;
+    transition: 1s;
+}
+
+.cuarta button:hover .overlay {
+    width: 100%;
+}
