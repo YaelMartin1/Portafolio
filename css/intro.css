@@ -5,6 +5,9 @@ header {
     color: #CA5698;
     top: 0;
     height: 50px;
+    position: sticky;
+    background-color: var(--background-color);
+    z-index: 50;
 }
 
 /* mail */
@@ -36,21 +39,31 @@ a:link {
 
 
 /* menu */
+nav {
+    display: flex;
+    align-items: center;
+    margin-right: 35px;
+}
 
 .menu {
-    margin-right: 20px;
     display: flex;
     flex-direction: row;
     position: relative;
     align-items: center;
-
+    gap: 20px;
+    overflow: visible;
+    margin: 0;
 }
 
 .seccion {
     text-transform: uppercase;
     text-decoration: none;
-    margin-left: 20px;
-    transition: .5s;
+}
+
+.seccion .seccion_link {
+    padding: 2px 10px;
+    border: 1px solid #CA5698;
+    border-radius: 5px;
 }
 
 .seccion_link:link {
@@ -63,7 +76,8 @@ a:link {
 
 .seccion_link:hover {
     color: #b84285;
-    font-size: 20px;
+    background-color: red;
+    transform: scale(1.1);
 }
 
 /* aside */

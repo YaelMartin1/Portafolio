@@ -1,7 +1,11 @@
+:root {
+    --background-color: #0d0f1d;
+}
+
 body {
-    background-color: #0d0f1d;
-    padding: 0%;
-    margin: 0%;
+    background-color: var(--background-color);
+    padding: 0;
+    margin: 0;
 }
 
 h2 {
