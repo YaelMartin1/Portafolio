@@ -83,3 +83,25 @@
         margin-left: 10px;
     }
 }
+
+@media screen and (min-width:768px) and (max-width:1280px) {
+    .contact .contenido__contact {
+        margin-bottom: 50px;
+    }
+
+    .contact .col {
+        margin: 90px auto;
+        width: 500px;
+    }
+
+
+    .boton__form {
+        border: 2px solid #f5c9f2;
+        font-size: 20px;
+        margin: 10px auto;
+    }
+
+    .svg__form {
+        margin-left: 10px;
+    }
+}

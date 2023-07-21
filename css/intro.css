@@ -308,3 +308,73 @@ h1 {
         transform: skew(20deg, 0deg) translateX(237px);
     }
 }
+
+@media screen and (min-width:768px) and (max-width:1280px) {
+    header {
+        height: 60px;
+    }
+
+    /* mail */
+    .mail {
+        margin-left: 6%;
+        font-size: 15px;
+    }
+
+
+    .mail__icono {
+        display: flex;
+        margin-right: 5px;
+        margin-top: 9px;
+    }
+
+    nav {
+        margin-right: 20px;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .seccion {
+        font-size: 20px;
+    }
+
+    .seccion .seccion_link {
+        padding: 2px 5px;
+    }
+
+
+    aside {
+        margin-top: 250px;
+    }
+
+    .aside__menu {
+        padding: 3%;
+    }
+
+    .aside__icono {
+        margin-left: 15px;
+    }
+
+
+    .cero {
+        display: grid;
+        grid-template-columns: 90px 180px 20px;
+    }
+
+    .mi__ser {
+        top: 160px;
+        margin-bottom: 160px;
+    }
+
+    h1 {
+        font-size: 80px;
+        margin-left: 50%;
+    }
+
+
+
+    .btn_posicion {
+        margin-left: 180px;
+    }
+}

@@ -124,3 +124,32 @@ p {
         height: 70px;
     }
 }
+
+@media screen and (min-width:768px) and (max-width:1280px) {
+
+    .h {
+        width: 10%;
+        height: 3px;
+        border-radius: 90%;
+    }
+
+    .padre__p {
+        width: 600px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    .espacio {
+        height: 90px;
+    }
+}
