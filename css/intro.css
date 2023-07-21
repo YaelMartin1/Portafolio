@@ -4,7 +4,7 @@ header {
     justify-content: space-between;
     color: #CA5698;
     top: 0;
-    height: 50px;
+    height: 80px;
     position: sticky;
     background-color: var(--background-color);
     z-index: 50;
@@ -15,17 +15,19 @@ header {
     position: relative;
     display: flex;
     flex-direction: row;
-    margin-left: 20%;
+    margin-left: 17%;
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    font-size: 20px;
+    animation: fadeIn 2s ease;
 }
 
 
 .mail__icono {
     display: flex;
     margin-right: 5px;
-    margin-top: 5.3px;
+    margin-top: 9px;
 }
 
 a {
@@ -42,7 +44,9 @@ a:link {
 nav {
     display: flex;
     align-items: center;
-    margin-right: 35px;
+    margin-right: 40px;
+    transition: all 0.6s ease;
+    animation: fadeIn 2s ease;
 }
 
 .menu {
@@ -58,6 +62,7 @@ nav {
 .seccion {
     text-transform: uppercase;
     text-decoration: none;
+    font-size: 32px;
 }
 
 .seccion .seccion_link {
@@ -74,18 +79,23 @@ nav {
     color: #CA5698;
 }
 
-.seccion_link:hover {
+.seccion:hover {
     color: #b84285;
-    background-color: red;
+    transform: scale(1.1);
+}
+
+.seccion_link:hover {
     transform: scale(1.1);
 }
 
 /* aside */
 
 aside {
-    margin-top: 80px;
+    margin-top: 200px;
     float: left;
     overflow: hidden;
+    transition: all 0.7s ease;
+    animation: fadeIn 2s ease;
 }
 
 .aside__menu {
@@ -95,21 +105,27 @@ aside {
 
 .aside__icono {
     margin: 10px 0;
+    margin-left: 10px;
+}
+
+.aside__icono:hover {
+    transform: scale(1.1);
 }
 
 /* principal pagina */
 
 .cero {
     display: grid;
-    grid-template-columns: 220px 200px 20px;
+    grid-template-columns: 100px 350px 20px;
     padding: 0%;
     margin: 0%;
 }
 
 .mi__ser {
     position: relative;
-    top: 40px;
-    margin-bottom: 60px;
+    top: 100px;
+    margin-bottom: 150px;
+    animation: fadeIn 2s ease;
 }
 
 h1 {
@@ -118,31 +134,37 @@ h1 {
     padding: 0%;
     margin: 0%;
     color: #CD82B2;
-    font-size: 70px;
+    font-size: 120px;
+    margin-left: 50%;
+    animation: fadeIn 2s ease;
 }
 
 .mi__descripcion {
     color: aliceblue;
     text-align: justify;
+    margin-left: 50%;
 }
 
 /* boton Lets Talk */
 
 .btn_posicion {
     position: relative;
-    margin-bottom: 90px;
-    margin-left: 240px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    margin-left: 340px;
 }
 
 .boton {
     position: relative;
-    padding: 10px 22px;
+    padding: 30px 32px;
     text-decoration: none;
     color: #fff;
     letter-spacing: 4px;
     text-indent: 10px;
     z-index: 2;
     transition: all 0.6s ease;
+    font-size: 30px;
+    animation: fadeIn 2s ease;
 }
 
 .boton::after {
@@ -173,7 +195,7 @@ h1 {
 
 .boton:hover::after {
     background-color: #ffffff31;
-    transform: skew(20deg, 0deg) translateX(169px);
+    transform: skew(20deg, 0deg) translateX(257px);
 }
 
 .boton:hover::before {
@@ -184,7 +206,9 @@ h1 {
 
 @media screen and (max-width:768px) {
     header {
-        height: 30px;
+        height: 60px;
+        justify-content: space-between;
+        position: sticky;
     }
 
     .mail {
@@ -192,49 +216,53 @@ h1 {
         display: flex;
         flex-direction: row;
         margin-left: 7%;
-        font-size: 8px;
+    }
+
+    .mail__nombre {
+        width: 0;
+        visibility: hidden;
     }
 
     .mail__icono {
-        margin-top: 3px;
+        margin-top: 4px;
     }
 
-
-    .menu {
-        margin-right: 0px;
-    }
 
     .seccion {
-        text-transform: uppercase;
-        text-decoration: none;
-        margin-left: 10px;
+        margin-left: 5px;
         transition: .5s;
     }
 
+    aside {
+        margin-top: 200px;
+    }
+
     .aside__menu {
-        margin: 5%;
+        margin-left: 20px;
         padding: 3%;
     }
 
     .aside__icono {
         margin: 5px 0;
-        height: 1.2em;
+        height: 2.5em;
     }
 
     .mi__ser {
-        margin-top: 20px;
+        margin-top: 70px;
+        width: 120px;
+        margin-bottom: 100px;
     }
 
 
     .cero {
         display: grid;
-        grid-template-columns: 50px 80px 50px;
+        grid-template-columns: 70px 80px 50px;
         padding: 0%;
         margin: 0%;
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 45px;
     }
 
     .mi__descripcion {
@@ -243,11 +271,29 @@ h1 {
 
 
 
+    nav {
+        margin: 0%;
+        margin-right: 10px;
+    }
+
+    .menu {
+        gap: 10px;
+        margin-right: 10px;
+    }
+
+    .seccion {
+        font-size: 13px;
+    }
+
+    .seccion .seccion_link {
+        padding: 0.5px 5px;
+    }
+
 
     .btn_posicion {
-        margin-top: 120px;
-        margin-bottom: 100px;
-        margin-left: 20%;
+        margin-top: 150px;
+        margin-bottom: 200px;
+        margin-left: 30%;
     }
 
     .boton {
@@ -256,5 +302,9 @@ h1 {
         color: #fff;
         letter-spacing: 4px;
         text-indent: 5px;
+    }
+
+    .boton:hover::after {
+        transform: skew(20deg, 0deg) translateX(237px);
     }
 }

@@ -1,0 +1,85 @@
+.contact .contenido__contact {
+    margin-bottom: 100px;
+}
+
+.contact .col {
+    margin: 100px auto;
+    position: relative;
+    width: 1000px;
+}
+
+.contact .col input,
+.contact .col textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px;
+    background-color: transparent;
+    color: #f5c9f2;
+    font-size: 25px;
+    border: 1px solid #d65ea0;
+}
+
+.col input::after {
+    background-color: transparent;
+}
+
+.boton__form {
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 3px solid #f5c9f2;
+    font-size: 30px;
+    color: #f5c9f2;
+    z-index: 10;
+    margin: 10px auto;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+.contact button .overlay {
+    position: absolute;
+    border-radius: 5%;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #d65ea0;
+    z-index: -1;
+    transition: 0.7s;
+}
+
+.contact button:hover .overlay {
+    width: 100%;
+    border-radius: 5%;
+}
+
+.svg__form {
+    margin-left: 15px;
+}
+
+
+@media screen and (max-width:768px) {
+    .contact .contenido__contact {
+        margin-bottom: 50px;
+    }
+
+    .contact .col {
+        margin: 30px auto;
+        width: 300px;
+    }
+
+
+    .boton__form {
+        border: 2px solid #f5c9f2;
+        font-size: 20px;
+        margin: 10px auto;
+    }
+
+    .svg__form {
+        margin-left: 10px;
+    }
+}

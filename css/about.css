@@ -1,0 +1,97 @@
+h2 {
+    margin: 0%;
+    padding: 0%;
+}
+
+.sobreMi__descripcion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about__columna {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+}
+
+
+h3 {
+    margin-top: 40px;
+    padding: 0%;
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+.habilidades {
+    display: grid;
+    justify-content: center;
+    animation: fadeIn2 2s ease;
+}
+
+.habilidades__categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cada__habilidad {
+    margin-left: 0%;
+    padding: 0%;
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 30px;
+    transition: all .7s ease;
+    cursor: pointer;
+}
+
+.about__imagen {
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    border-radius: 5%;
+}
+
+@media screen and (max-width:768px) {
+
+    .foto {
+        height: 200px;
+    }
+
+    .about__imagen {
+        margin-left: 10px;
+        margin-top: 140px;
+        margin-bottom: 190px;
+    }
+
+    .habilidades {
+        margin-top: 90px;
+        display: block;
+        justify-content: center;
+        animation: fadeIn2 2s ease;
+    }
+
+    .habilidad {
+        font-size: 10px;
+    }
+
+    .habilidades__categorias {
+        margin-top: 20px;
+        grid-template-columns: repeat(3, 2fr);
+    }
+
+    .cada__habilidad svg {
+        height: 1.5em;
+    }
+
+    h3 {
+        margin-top: 40px;
+        margin-left: 35px;
+    }
+}
