@@ -8,6 +8,8 @@ header {
     position: sticky;
     background-color: var(--background-color);
     z-index: 50;
+    box-shadow: 0 -5px 15px 5px #CA5698;
+
 }
 
 /* mail */
@@ -207,15 +209,14 @@ h1 {
 @media screen and (max-width:768px) {
     header {
         height: 60px;
-        justify-content: space-between;
-        position: sticky;
+        padding: 0 10px;
     }
 
     .mail {
         position: relative;
         display: flex;
         flex-direction: row;
-        margin-left: 7%;
+        margin-left: 0;
     }
 
     .mail__nombre {
@@ -272,13 +273,11 @@ h1 {
 
 
     nav {
-        margin: 0%;
-        margin-right: 10px;
+        margin: 0;
     }
 
     .menu {
-        gap: 10px;
-        margin-right: 10px;
+        gap: 0px;
     }
 
     .seccion {
