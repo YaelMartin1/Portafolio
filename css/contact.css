@@ -6,11 +6,13 @@
     margin: 100px auto;
     position: relative;
     width: 1000px;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact .col input,
 .contact .col textarea {
-    width: 100%;
+    flex-basis: 100%;
     padding: 15px;
     margin: 10px;
     background-color: transparent;
