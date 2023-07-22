@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/intro.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/works.css">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="src/assets/css/style.css">
+    <link rel="stylesheet" href="src/assets/css/intro.css">
+    <link rel="stylesheet" href="src/assets/css/about.css">
+    <link rel="stylesheet" href="src/assets/css/works.css">
+    <link rel="stylesheet" href="src/assets/css/contact.css">
+    <script src="src/js/form.js" defer></script>
 </head>
 
 <body>
@@ -81,7 +82,7 @@
 
         <div class="about__columna">
             <div class="about__imagen">
-                <img class="foto" src="img/aboutme_image.jpeg" height="500px" 
+                <img class="foto" src="src/assets/img/aboutme_image.jpeg" height="500px" 
                     alt="Foto Yael Martin">
             </div>
             <div class="habilidades">
@@ -157,19 +158,19 @@
             </div>
             <div class="galeria">
                 <div class="proyecto">
-                    <img src="img/imagen (2).jpg" alt="">
+                    <img src="src/assets/img/imagen (2).jpg" alt="">
                     <div class="overlay">
                         <h3>Encriptador</h3>
                     </div>
                 </div>
                 <div class="proyecto">
-                    <img src="img/imagen (1).jpg" alt="">
+                    <img src="src/assets/img/imagen (1).jpg" alt="">
                     <div class="overlay">
                         <h3>Diseño Creativo</h3>
                     </div>
                 </div>
                 <div class="proyecto">
-                    <img src="img/imagen (1).jpg" alt="">
+                    <img src="src/assets/img/imagen (1).jpg" alt="">
                     <div class="overlay">
                         <h3>E-commerce Darwin</h3>
                     </div>
@@ -191,10 +192,10 @@
                     as soon as possible</p>
             </div>
             <!-- Formulario -->
-            <form class="col">
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <form class="col" id="contact-form">
+                <input type="text" placeholder="Name" name="name">
+                <input type="email" placeholder="Email" name="email">
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
                 <button class="boton__form">
                     Send message<svg class="svg__form" xmlns="http://www.w3.org/2000/svg" height="1.8em" fill="#f5c9f2"
                         viewBox="0 0 512 512">
