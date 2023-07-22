@@ -33,6 +33,7 @@ h3 {
 .habilidades__categorias {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding: 0;
 }
 
 .cada__habilidad {
@@ -67,20 +68,20 @@ h3 {
     -o-border-radius: 10px;
 }
 
+
+
 @media screen and (max-width:768px) {
 
-    .foto {
-        height: 200px;
+    .about__columna {
+        display: flex;
+        flex-direction: column;
     }
 
-    .about__imagen {
-        margin-left: 10px;
-        margin-top: 140px;
-        margin-bottom: 190px;
+    .foto {
+        height: 300px;
     }
 
     .habilidades {
-        margin-top: 90px;
         display: block;
         justify-content: center;
         animation: fadeIn2 2s ease;
@@ -97,11 +98,6 @@ h3 {
 
     .cada__habilidad svg {
         height: 1.5em;
-    }
-
-    h3 {
-        margin-top: 40px;
-        margin-left: 35px;
     }
 }
 
