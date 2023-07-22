@@ -1,5 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --background-color: #0d0f1d;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -19,6 +29,7 @@ h2 {
 ul {
     list-style-type: none;
     overflow: hidden;
+    padding: 0;
 }
 
 li {
