@@ -3,12 +3,17 @@
 }
 
 .contact .col {
-    margin: 100px auto;
+    margin: 80px auto;
     position: relative;
     width: 1000px;
     display: flex;
     flex-direction: column;
 }
+
+input:-webkit-autofill {
+    fill: none;
+}
+
 
 .contact .col input,
 .contact .col textarea {
@@ -43,7 +48,7 @@
     align-items: center;
     background-color: transparent;
     border: 3px solid #f5c9f2;
-    font-size: 30px;
+    font-size: 20px;
     color: #f5c9f2;
     z-index: 10;
     margin: 10px auto;

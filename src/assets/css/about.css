@@ -11,6 +11,7 @@ h2 {
 
 .about__columna {
     display: grid;
+    margin-top: 80px;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-content: center;
