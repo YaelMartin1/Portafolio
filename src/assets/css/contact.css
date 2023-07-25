@@ -36,8 +36,8 @@ input:-webkit-autofill {
     outline: 2px solid #d65ea0;
 }
 
-.col input::after {
-    background-color: transparent;
+.col input .col input::after {
+    background-color: white;
 }
 
 .boton__form {
@@ -79,7 +79,6 @@ input:-webkit-autofill {
 .svg__form {
     margin-left: 15px;
 }
-
 
 @media screen and (max-width:768px) {
     .contact .contenido__contact {
